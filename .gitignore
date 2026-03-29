@@ -1,0 +1,15 @@
+# Brand strategy (internal document)
+brand-strategy.md
+
+# Brand assets not used by the website (offline/print use only)
+img/brand/wallpaper-*
+img/brand/profile-pic.svg
+img/brand/profile-pic-light.svg
+img/brand/profile-pic-512.png
+img/brand/profile-pic-light-512.png
+img/brand/logo-*.svg
+img/brand/logo-icon*.svg
+img/brand/android-chrome-*
+
+# OS files
+.DS_Store

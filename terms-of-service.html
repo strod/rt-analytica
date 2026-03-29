@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso — rt analytica</title>
+  <meta name="description" content="Termos de uso da rt analytica. Condições para utilização do nosso site e contratação de serviços.">
+  <link rel="icon" type="image/svg+xml" href="img/brand/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/brand/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/brand/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/brand/apple-touch-icon.png">
+  <meta name="theme-color" content="#0F4C5C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0F4C5C;
+      --primary-light: #1A7A8A;
+      --primary-faint: rgba(15, 76, 92, 0.06);
+      --secondary: #3D405B;
+      --accent: #E8A838;
+      --accent-hover: #D4952E;
+      --almost-black: #1A1A2E;
+      --dark-gray: #4A4A5A;
+      --mid-gray: #9CA3AF;
+      --light-gray: #F0F1F3;
+      --off-white: #FAFAFA;
+      --white: #FFFFFF;
+      --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Mono', monospace;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1200px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    body { font-family: var(--font-body); font-size: 16px; line-height: 1.6; color: var(--dark-gray); background-color: var(--off-white); overflow-x: hidden; }
+    a { color: var(--primary); text-decoration: none; transition: color var(--transition); }
+    a:hover { color: var(--primary-light); }
+    h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--almost-black); line-height: 1.2; }
+    h1 { font-size: 2.25rem; font-weight: 700; letter-spacing: -0.02em; }
+    h2 { font-size: 1.5rem; font-weight: 600; color: var(--secondary); margin-top: 48px; margin-bottom: 16px; }
+    h3 { font-size: 1.125rem; font-weight: 600; color: var(--secondary); margin-top: 32px; margin-bottom: 12px; }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
+
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(250,250,250,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--light-gray); transition: box-shadow var(--transition); }
+    .nav.scrolled { box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+    .logo:hover { opacity: 0.85; }
+    .logo-icon { width: 36px; height: 36px; flex-shrink: 0; }
+    .logo-wordmark { display: flex; align-items: baseline; gap: 5px; font-family: var(--font-heading); font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
+    .logo-analytica { color: var(--secondary); }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { font-size: 14px; font-weight: 500; color: var(--secondary); text-decoration: none; transition: color var(--transition); }
+    .nav-links a:hover { color: var(--primary); }
+    .lang-switch { display: inline-flex; align-items: center; gap: 0; background: var(--light-gray); border-radius: 20px; padding: 2px; }
+    .lang-switch button { padding: 5px 12px; border: none; border-radius: 18px; background: transparent; color: var(--mid-gray); font-family: var(--font-body); font-size: 12px; font-weight: 600; cursor: pointer; transition: all var(--transition); line-height: 1; }
+    .lang-switch button.active { background: var(--white); color: var(--primary); box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .lang-switch button:hover:not(.active) { color: var(--secondary); }
+    .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; background: var(--primary); color: var(--white); font-family: var(--font-body); font-size: 14px; font-weight: 600; border: none; border-radius: var(--radius-sm); cursor: pointer; transition: all var(--transition); text-decoration: none; white-space: nowrap; }
+    .btn-primary:hover { background: var(--primary-light); color: var(--white); transform: translateY(-1px); box-shadow: 0 4px 12px rgba(15,76,92,0.25); }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1001; }
+    .hamburger span { display: block; width: 24px; height: 2px; background: var(--secondary); border-radius: 2px; transition: all 0.3s ease; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .mobile-nav { display: none; position: fixed; top: 72px; left: 0; right: 0; bottom: 0; background: rgba(250,250,250,0.98); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); z-index: 999; padding: 32px 24px; opacity: 0; transform: translateY(-8px); transition: opacity 0.3s ease, transform 0.3s ease; }
+    .mobile-nav.open { display: flex; flex-direction: column; gap: 8px; opacity: 1; transform: translateY(0); }
+    .mobile-nav a { display: block; padding: 16px 0; font-size: 18px; font-weight: 500; color: var(--secondary); border-bottom: 1px solid var(--light-gray); }
+    .mobile-nav .btn-primary { margin-top: 16px; text-align: center; justify-content: center; }
+    .mobile-nav .lang-switch { margin-top: 16px; align-self: flex-start; }
+
+    .legal-hero { padding: 120px 0 48px; border-bottom: 1px solid var(--light-gray); background: var(--white); }
+    .legal-hero h1 { margin-bottom: 12px; }
+    .legal-hero .meta { font-size: 14px; color: var(--mid-gray); font-family: var(--font-mono); }
+    .legal-content { max-width: 760px; padding: 48px 0 100px; }
+    .legal-content p { margin-bottom: 16px; line-height: 1.75; }
+    .legal-content ul { margin: 12px 0 20px 24px; }
+    .legal-content li { margin-bottom: 8px; line-height: 1.7; }
+    .legal-content strong { color: var(--almost-black); }
+
+    .footer { background: var(--almost-black); padding: 48px 0; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px; }
+    .footer .logo-analytica { color: rgba(255,255,255,0.9); }
+    .footer .logo-icon rect { fill: none; stroke: rgba(255,255,255,0.7); stroke-width: 2; }
+    .footer .logo-icon text { fill: rgba(255,255,255,0.9); }
+    .footer .logo-icon .accent-bar { fill: #E8A838; }
+    .footer-links { display: flex; align-items: center; gap: 24px; }
+    .footer-links a { font-size: 14px; color: rgba(255,255,255,0.5); transition: color var(--transition); }
+    .footer-links a:hover { color: rgba(255,255,255,0.9); }
+    .footer-contact { display: flex; align-items: center; gap: 16px; }
+    .footer-contact a { font-size: 14px; color: rgba(255,255,255,0.6); }
+    .footer-contact a:hover { color: var(--accent); }
+    .footer-copy { font-size: 13px; color: rgba(255,255,255,0.35); text-align: center; margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.75rem; }
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .legal-hero { padding: 100px 0 32px; }
+      .footer-inner { flex-direction: column; text-align: center; }
+      .footer-links { flex-direction: column; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav" role="navigation" aria-label="Navegação principal">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" aria-label="rt analytica home">
+        <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="4" width="56" height="56" rx="12" fill="#0F4C5C"/>
+          <text x="32" y="42" text-anchor="middle" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="28" letter-spacing="-0.5">rt</text>
+          <rect class="accent-bar" x="18" y="50" width="28" height="2.5" rx="1.25" fill="#E8A838" opacity="0.8"/>
+        </svg>
+        <span class="logo-wordmark"><span class="logo-analytica">analytica</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Voltar ao Início</a></li>
+        <li>
+          <div class="lang-switch" role="group" aria-label="Idioma">
+            <button data-lang="pt" class="active" aria-pressed="true">PT</button>
+            <button data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </li>
+        <li><a href="index.html#contact" class="btn-primary" data-i18n="nav.cta">Agendar Consultoria</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+    <div class="mobile-nav" role="menu" aria-label="Navegação mobile">
+      <a href="index.html" role="menuitem" data-i18n="nav.home">Voltar ao Início</a>
+      <a href="index.html#contact" class="btn-primary" role="menuitem" data-i18n="nav.cta">Agendar Consultoria</a>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button data-lang="pt" class="active" aria-pressed="true">PT</button>
+        <button data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="legal-hero">
+      <div class="container">
+        <h1 data-i18n="terms.title">Termos de Uso</h1>
+        <p class="meta" data-i18n="terms.updated">Última atualização: 28 de março de 2026</p>
+      </div>
+    </section>
+
+    <section class="container legal-content">
+
+      <p data-i18n="terms.intro">Estes Termos de Uso regem o acesso e a utilização do site da rt analytica, bem como as condições gerais para a contratação dos nossos serviços. Ao acessar nosso site, você concorda com estes termos.</p>
+
+      <h2 data-i18n="terms.h1">1. Sobre os Serviços</h2>
+      <p data-i18n="terms.p1">A rt analytica desenvolve software sob medida, incluindo chatbots IA para WhatsApp, automações de dados e web, dashboards de business intelligence, pipelines de dados e integrações via API. Cada projeto é definido por um escopo específico acordado entre as partes.</p>
+
+      <h2 data-i18n="terms.h2">2. Contratação</h2>
+      <p data-i18n="terms.p2">A contratação dos nossos serviços é formalizada por meio de proposta comercial e/ou contrato de prestação de serviços. Os termos específicos de cada projeto — incluindo escopo, prazos, valores e condições de pagamento — são definidos nesses documentos, que prevalecem sobre estes Termos de Uso em caso de conflito.</p>
+
+      <h2 data-i18n="terms.h3">3. Propriedade Intelectual</h2>
+      <h3 data-i18n="terms.h3a">3.1 Código desenvolvido para o cliente</h3>
+      <p data-i18n="terms.p3a">Salvo acordo em contrário, o código-fonte desenvolvido especificamente para o projeto do cliente é de propriedade do cliente após o pagamento integral. O cliente recebe o código, a documentação e todos os direitos de uso.</p>
+
+      <h3 data-i18n="terms.h3b">3.2 Ferramentas e componentes reutilizáveis</h3>
+      <p data-i18n="terms.p3b">A rt analytica pode utilizar bibliotecas, frameworks e componentes próprios ou de código aberto no desenvolvimento. A propriedade dessas ferramentas permanece com seus respectivos criadores, sendo concedida ao cliente uma licença de uso irrevogável para o projeto contratado.</p>
+
+      <h3 data-i18n="terms.h3c">3.3 Site e marca</h3>
+      <p data-i18n="terms.p3c">O conteúdo deste site — incluindo textos, design, logotipos e código — é propriedade da rt analytica e não pode ser reproduzido sem autorização prévia por escrito.</p>
+
+      <h2 data-i18n="terms.h4">4. Confidencialidade</h2>
+      <p data-i18n="terms.p4">Tratamos todas as informações compartilhadas durante consultas e projetos como confidenciais. Estamos dispostos a formalizar essa obrigação por meio de Acordos de Confidencialidade (NDA) quando solicitado.</p>
+
+      <h2 data-i18n="terms.h5">5. Garantias e Suporte</h2>
+      <p data-i18n="terms.p5">Oferecemos um período de correção de bugs após a entrega de cada projeto, conforme definido na proposta comercial. Suporte contínuo, manutenção e melhorias adicionais são disponibilizados por meio de contratos de retainer separados.</p>
+
+      <h2 data-i18n="terms.h6">6. Limitação de Responsabilidade</h2>
+      <p data-i18n="terms.p6">A rt analytica não se responsabiliza por danos indiretos, incidentais ou consequenciais decorrentes do uso dos sistemas desenvolvidos. Nossa responsabilidade total é limitada ao valor pago pelo cliente pelo projeto em questão. Não garantimos que os sistemas desenvolvidos serão livres de todos os erros, mas nos comprometemos a corrigi-los dentro do escopo acordado.</p>
+
+      <h2 data-i18n="terms.h7">7. Uso do Site</h2>
+      <p data-i18n="terms.p7intro">Ao utilizar nosso site, você concorda em:</p>
+      <ul>
+        <li data-i18n="terms.l7a">Não utilizar o site para fins ilegais ou não autorizados</li>
+        <li data-i18n="terms.l7b">Não tentar acessar áreas restritas ou sistemas internos</li>
+        <li data-i18n="terms.l7c">Não transmitir vírus, malware ou código malicioso</li>
+        <li data-i18n="terms.l7d">Fornecer informações verdadeiras ao entrar em contato conosco</li>
+      </ul>
+
+      <h2 data-i18n="terms.h8">8. Alterações nos Termos</h2>
+      <p data-i18n="terms.p8">Reservamo-nos o direito de modificar estes termos a qualquer momento. Alterações significativas serão comunicadas através do nosso site. O uso continuado do site após as alterações constitui aceitação dos novos termos.</p>
+
+      <h2 data-i18n="terms.h9">9. Lei Aplicável</h2>
+      <p data-i18n="terms.p9">Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de domicílio da rt analytica.</p>
+
+      <h2 data-i18n="terms.h10">10. Contato</h2>
+      <p data-i18n="terms.p10">Para dúvidas sobre estes termos de uso, entre em contato: <a href="mailto:hello@rodtex.dev">hello@rodtex.dev</a></p>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index.html" class="logo" aria-label="rt analytica home">
+          <svg class="logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="4" y="4" width="56" height="56" rx="12" fill="#0F4C5C"/>
+            <text x="32" y="42" text-anchor="middle" fill="#FFFFFF" font-family="'Inter', system-ui, sans-serif" font-weight="700" font-size="28" letter-spacing="-0.5">rt</text>
+            <rect class="accent-bar" x="18" y="50" width="28" height="2.5" rx="1.25" fill="#E8A838" opacity="0.8"/>
+          </svg>
+          <span class="logo-wordmark"><span class="logo-analytica">analytica</span></span>
+        </a>
+        <div class="footer-contact">
+          <a href="mailto:hello@rodtex.dev">hello@rodtex.dev</a>
+          <a href="#" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Política de Privacidade</a>
+          <a href="terms-of-service.html" data-i18n="footer.terms">Termos de Uso</a>
+        </div>
+      </div>
+      <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 rt analytica. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const translations = {
+      en: {
+        '_title': 'Terms of Service — rt analytica',
+        '_description': 'rt analytica terms of service. Conditions for using our website and contracting our services.',
+        'nav.home': 'Back to Home',
+        'nav.cta': 'Book a Consultation',
+        'footer.privacy': 'Privacy Policy',
+        'footer.terms': 'Terms of Service',
+        'footer.copy': '\u00a9 2026 rt analytica. All rights reserved.',
+        'terms.title': 'Terms of Service',
+        'terms.updated': 'Last updated: March 28, 2026',
+        'terms.intro': 'These Terms of Service govern access to and use of the rt analytica website, as well as the general conditions for contracting our services. By accessing our website, you agree to these terms.',
+        'terms.h1': '1. About Our Services',
+        'terms.p1': 'rt analytica develops custom software, including WhatsApp AI chatbots, data and web automations, business intelligence dashboards, data pipelines, and API integrations. Each project is defined by a specific scope agreed upon by both parties.',
+        'terms.h2': '2. Contracting',
+        'terms.p2': 'Our services are formalized through a commercial proposal and/or service agreement. The specific terms of each project \u2014 including scope, timelines, pricing, and payment conditions \u2014 are defined in those documents, which prevail over these Terms of Service in case of conflict.',
+        'terms.h3': '3. Intellectual Property',
+        'terms.h3a': '3.1 Code developed for the client',
+        'terms.p3a': 'Unless otherwise agreed, source code developed specifically for the client\'s project is owned by the client after full payment. The client receives the code, documentation, and all usage rights.',
+        'terms.h3b': '3.2 Reusable tools and components',
+        'terms.p3b': 'rt analytica may use proprietary or open-source libraries, frameworks, and components in development. Ownership of these tools remains with their respective creators, with the client receiving an irrevocable license to use them within the contracted project.',
+        'terms.h3c': '3.3 Website and brand',
+        'terms.p3c': 'The content of this website \u2014 including text, design, logos, and code \u2014 is the property of rt analytica and may not be reproduced without prior written authorization.',
+        'terms.h4': '4. Confidentiality',
+        'terms.p4': 'We treat all information shared during consultations and projects as confidential. We are willing to formalize this obligation through Non-Disclosure Agreements (NDAs) when requested.',
+        'terms.h5': '5. Warranties and Support',
+        'terms.p5': 'We offer a bug-fix period after delivery of each project, as defined in the commercial proposal. Ongoing support, maintenance, and additional enhancements are available through separate retainer contracts.',
+        'terms.h6': '6. Limitation of Liability',
+        'terms.p6': 'rt analytica is not liable for indirect, incidental, or consequential damages arising from the use of developed systems. Our total liability is limited to the amount paid by the client for the project in question. We do not guarantee that developed systems will be free of all errors, but we commit to correcting them within the agreed scope.',
+        'terms.h7': '7. Website Use',
+        'terms.p7intro': 'By using our website, you agree to:',
+        'terms.l7a': 'Not use the website for illegal or unauthorized purposes',
+        'terms.l7b': 'Not attempt to access restricted areas or internal systems',
+        'terms.l7c': 'Not transmit viruses, malware, or malicious code',
+        'terms.l7d': 'Provide truthful information when contacting us',
+        'terms.h8': '8. Changes to Terms',
+        'terms.p8': 'We reserve the right to modify these terms at any time. Significant changes will be communicated through our website. Continued use of the website after changes constitutes acceptance of the new terms.',
+        'terms.h9': '9. Governing Law',
+        'terms.p9': 'These terms are governed by the laws of the Federative Republic of Brazil. Any dispute shall be resolved in the courts of rt analytica\'s domicile.',
+        'terms.h10': '10. Contact',
+        'terms.p10': 'For questions about these terms of service, contact us: <a href="mailto:hello@rodtex.dev">hello@rodtex.dev</a>',
+      },
+      pt: {
+        '_title': 'Termos de Uso — rt analytica',
+        '_description': 'Termos de uso da rt analytica. Condições para utilização do nosso site e contratação de serviços.',
+        'nav.home': 'Voltar ao Início',
+        'nav.cta': 'Agendar Consultoria',
+        'footer.privacy': 'Política de Privacidade',
+        'footer.terms': 'Termos de Uso',
+        'footer.copy': '\u00a9 2026 rt analytica. Todos os direitos reservados.',
+        'terms.title': 'Termos de Uso',
+        'terms.updated': 'Última atualização: 28 de março de 2026',
+        'terms.intro': 'Estes Termos de Uso regem o acesso e a utilização do site da rt analytica, bem como as condições gerais para a contratação dos nossos serviços. Ao acessar nosso site, você concorda com estes termos.',
+        'terms.h1': '1. Sobre os Serviços',
+        'terms.p1': 'A rt analytica desenvolve software sob medida, incluindo chatbots IA para WhatsApp, automações de dados e web, dashboards de business intelligence, pipelines de dados e integrações via API. Cada projeto é definido por um escopo específico acordado entre as partes.',
+        'terms.h2': '2. Contratação',
+        'terms.p2': 'A contratação dos nossos serviços é formalizada por meio de proposta comercial e/ou contrato de prestação de serviços. Os termos específicos de cada projeto \u2014 incluindo escopo, prazos, valores e condições de pagamento \u2014 são definidos nesses documentos, que prevalecem sobre estes Termos de Uso em caso de conflito.',
+        'terms.h3': '3. Propriedade Intelectual',
+        'terms.h3a': '3.1 Código desenvolvido para o cliente',
+        'terms.p3a': 'Salvo acordo em contrário, o código-fonte desenvolvido especificamente para o projeto do cliente é de propriedade do cliente após o pagamento integral. O cliente recebe o código, a documentação e todos os direitos de uso.',
+        'terms.h3b': '3.2 Ferramentas e componentes reutilizáveis',
+        'terms.p3b': 'A rt analytica pode utilizar bibliotecas, frameworks e componentes próprios ou de código aberto no desenvolvimento. A propriedade dessas ferramentas permanece com seus respectivos criadores, sendo concedida ao cliente uma licença de uso irrevogável para o projeto contratado.',
+        'terms.h3c': '3.3 Site e marca',
+        'terms.p3c': 'O conteúdo deste site \u2014 incluindo textos, design, logotipos e código \u2014 é propriedade da rt analytica e não pode ser reproduzido sem autorização prévia por escrito.',
+        'terms.h4': '4. Confidencialidade',
+        'terms.p4': 'Tratamos todas as informações compartilhadas durante consultas e projetos como confidenciais. Estamos dispostos a formalizar essa obrigação por meio de Acordos de Confidencialidade (NDA) quando solicitado.',
+        'terms.h5': '5. Garantias e Suporte',
+        'terms.p5': 'Oferecemos um período de correção de bugs após a entrega de cada projeto, conforme definido na proposta comercial. Suporte contínuo, manutenção e melhorias adicionais são disponibilizados por meio de contratos de retainer separados.',
+        'terms.h6': '6. Limitação de Responsabilidade',
+        'terms.p6': 'A rt analytica não se responsabiliza por danos indiretos, incidentais ou consequenciais decorrentes do uso dos sistemas desenvolvidos. Nossa responsabilidade total é limitada ao valor pago pelo cliente pelo projeto em questão. Não garantimos que os sistemas desenvolvidos serão livres de todos os erros, mas nos comprometemos a corrigi-los dentro do escopo acordado.',
+        'terms.h7': '7. Uso do Site',
+        'terms.p7intro': 'Ao utilizar nosso site, você concorda em:',
+        'terms.l7a': 'Não utilizar o site para fins ilegais ou não autorizados',
+        'terms.l7b': 'Não tentar acessar áreas restritas ou sistemas internos',
+        'terms.l7c': 'Não transmitir vírus, malware ou código malicioso',
+        'terms.l7d': 'Fornecer informações verdadeiras ao entrar em contato conosco',
+        'terms.h8': '8. Alterações nos Termos',
+        'terms.p8': 'Reservamo-nos o direito de modificar estes termos a qualquer momento. Alterações significativas serão comunicadas através do nosso site. O uso continuado do site após as alterações constitui aceitação dos novos termos.',
+        'terms.h9': '9. Lei Aplicável',
+        'terms.p9': 'Estes termos são regidos pelas leis da República Federativa do Brasil. Qualquer disputa será resolvida no foro da comarca de domicílio da rt analytica.',
+        'terms.h10': '10. Contato',
+        'terms.p10': 'Para dúvidas sobre estes termos de uso, entre em contato: <a href="mailto:hello@rodtex.dev">hello@rodtex.dev</a>',
+      }
+    };
+
+    let currentLang = localStorage.getItem('rt-lang') || 'pt';
+    function setLanguage(lang) {
+      currentLang = lang;
+      localStorage.setItem('rt-lang', lang);
+      document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+      const t = translations[lang];
+      document.title = t['_title'];
+      document.querySelector('meta[name="description"]').setAttribute('content', t['_description']);
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (t[key] !== undefined) el.innerHTML = t[key];
+      });
+      document.querySelectorAll('.lang-switch button').forEach(btn => {
+        const isActive = btn.getAttribute('data-lang') === lang;
+        btn.classList.toggle('active', isActive);
+        btn.setAttribute('aria-pressed', isActive);
+      });
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.lang-switch button').forEach(btn => {
+        btn.addEventListener('click', () => setLanguage(btn.getAttribute('data-lang')));
+      });
+      setLanguage(currentLang);
+    });
+
+    const nav = document.querySelector('.nav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 10); }, { passive: true });
+
+    const hamburger = document.querySelector('.hamburger');
+    const mobileNav = document.querySelector('.mobile-nav');
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('active');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.classList.toggle('open', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('open');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
+</body>
+</html>
